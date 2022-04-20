@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormcontrolComponent } from './reactive-formcontrol/reactive-formcontrol.component';
+import { ReactiveFormgroupComponent } from './reactive-formgroup/reactive-formgroup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReactiveFormcontrolComponent,
+    ReactiveFormgroupComponent
   ],
   imports: [
     BrowserModule,

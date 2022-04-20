@@ -1,0 +1,16 @@
+<label>
+
+  Enter email:
+  <input type="text" [formControl]="email">
+
+</label>
+
+<p>
+  Display value: {{email.value}}
+</p>
+
+
+<p>
+
+  <button (click)="updateEmail()">Click to update the text!</button>
+</p>
