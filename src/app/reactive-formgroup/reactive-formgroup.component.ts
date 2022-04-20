@@ -41,4 +41,13 @@ export class ReactiveFormgroupComponent implements OnInit {
     console.log(this.userProfileForm.get(['address', 'address1']).value)  //  gets data from address.address1
     console.log(this.userProfileForm.get('address')?.get('address2')?.value)
   }
+
+  updatePartially() {
+    this.userProfileForm.patchValue({
+      firstName: 'Audhil',
+      address: {
+        address1: 'ABC apartment!'
+      }
+    });
+  }
 }
