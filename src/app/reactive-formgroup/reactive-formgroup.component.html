@@ -16,6 +16,29 @@
     Email: <input type="text" formControlName="email">
   </label>
 
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+    <label>
+      Address 1: <input type="text" formControlName="address1">
+    </label>
+    <br>
+    <label>
+      Address 2: <input type="text" formControlName="address2">
+    </label>
+    <br>
+    <label>
+      State: <input type="text" formControlName="state">
+    </label>
+    <br>
+    <label>
+      Zip: <input type="text" formControlName="zip">
+    </label>
+    <br>
+
+
+  </div>
+
   <br>
   <button type="submit" [disabled]="!userProfileForm.valid">Click to submit!</button>
 </form>
